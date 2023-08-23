@@ -1,0 +1,160 @@
+.container-fluid {
+  width: 100%;
+  padding: 5rem 0;
+  background-color: rgba(5, 5, 8, 0.397);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 6rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+}
+
+.input-box input {
+  width: 400px;
+  padding: 1.5rem 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0;
+  outline: 0;
+  border-radius: 1.8rem;
+}
+
+.input-box button {
+  width: 120px;
+  height: 80px;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border: 0;
+  background-color: rgba(59, 228, 240, 0.842);
+  transition: 0.5s;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.input-box button:hover {
+  background-color: rgba(7, 7, 37, 0.925);
+  color: #fff;
+}
+
+.value {
+  margin-top: 2rem;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+}
+
+.itemmap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(58, 58, 119);
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 1.5rem;
+  margin: 2rem 0;
+}
+
+.editDeletebtn button {
+  margin-left: 1rem;
+  width: 130px;
+  height: 60px;
+  border-radius: 1.5rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: 600;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.editDeletebtn button:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+.removeBtn button {
+  width: 100%;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: aqua;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 700px) {
+  .input-box input {
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .container {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .input-box input {
+    display: block;
+    margin: 2rem auto;
+  }
+
+  .itemmap {
+    width: 100%;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .itemmap {
+    width: 100%;
+    height: 60px;
+  }
+
+  .editDeletebtn button {
+    width: 80px;
+    height: 40px;
+    border-radius: 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .input-box button {
+    width: 100px;
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .itemmap {
+    display: block;
+    height: 120px;
+  }
+
+  .editDeletebtn button {
+    margin: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .input-box input {
+    width: 150px;
+  }
+
+  .itemmap {
+    display: block;
+    height: 170px;
+  }
+}
